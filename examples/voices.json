@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "characters": {
+    "boss": {
+      "display_name": "Boss",
+      "voice": "Brio",
+      "base_style": "A relaxed middle-aged man who becomes animated when excited"
+    },
+    "assistant": {
+      "display_name": "Assistant",
+      "voice": "Leda",
+      "base_style": "A cheerful young woman with lively, conversational delivery"
+    }
+  }
+}
+

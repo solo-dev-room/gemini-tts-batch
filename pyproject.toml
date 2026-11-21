@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gemini-tts-batch"
+version = "0.1.0"
+description = "Generate scene-organized WAV files from structured scripts using Gemini TTS."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+  "google-genai>=2.25.0",
+  "jsonschema>=4.23.0",
+  "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3.0"]
+
+[project.scripts]
+gemini-tts-batch = "gemini_tts_batch.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gemini_tts_batch"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"schemas" = "gemini_tts_batch/schemas"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

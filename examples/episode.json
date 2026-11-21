@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "ep001",
+  "title": "Example episode",
+  "output": {
+    "relative_dir": "EP001/02_Audio_WAV"
+  },
+  "tts": {
+    "model": "gemini-3.8-flash-tts",
+    "language_code": "ja-JP"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Opening",
+      "lines": [
+        {
+          "id": "l001",
+          "speaker": "boss",
+          "text": "暇だなぁ……",
+          "direction": "ぼやくように"
+        },
+        {
+          "id": "l002",
+          "speaker": "assistant",
+          "text": "それなら、動画を作ってみませんか？",
+          "direction": "明るく提案する"
+        }
+      ]
+    }
+  ]
+}
+
